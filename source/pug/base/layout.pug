@@ -1,0 +1,35 @@
+doctype html
+
+include ../base/mixins
+include ../base/header
+include ../base/footer
+
+block variables
+
+html(lang="ru")
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="description", content="Costravel — описание")
+
+    link(rel="preload", href="fonts/montserrat-v25-latin_cyrillic-500.woff2", as="font", crossorigin="anonymous")
+    link(rel="preload", href="fonts/montserrat-v25-latin_cyrillic-700.woff2", as="font", crossorigin="anonymous")
+    link(rel="stylesheet", href="css/style.min.css")
+
+  body
+    +sprite()
+    .wrapper
+      .overlay
+      if (hasHeader)
+        +header(headerMods, currentPage)
+
+      block main
+
+      if (hasFooter)
+        +footer(footerMods, currentPage)
+
+    block modals
+
+    script(src="js/main.min.js")

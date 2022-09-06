@@ -1,0 +1,15 @@
+.questions {
+  padding: 130px 0 140px;
+  background-color: $wisper;
+}
+
+.questions__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 95px;
+}
+
+.questions__wrapper-text {
+  width: 360px;
+}

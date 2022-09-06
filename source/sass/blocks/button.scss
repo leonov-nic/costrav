@@ -1,0 +1,44 @@
+.button {
+  margin: 0;
+  padding: 17px 51px 16px 51px;
+  background: linear-gradient(92.71deg, $blue 0%, $lightseagreen 100%);
+  border-radius: 60px;
+  color: $white-button;
+  @include font(14px, 17px, 700);
+  outline: none;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+
+  &:hover {
+    background: linear-gradient(170deg, $lightseagreen 0%, $blue 100%);
+    .button__icon {
+      transform: translateX(3px);
+    }
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 1px $active;
+  }
+
+  & .button__icon {
+    transition: transform 0.3s;
+  }
+
+  &--withoutarrow {
+    & .button__icon {
+      display: none;
+    }
+  }
+
+  &--news {
+    padding: 12px 42px 13px 42px;
+    @include font(12px, 15px, 700);
+  }
+}
+
+
+
+

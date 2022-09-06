@@ -1,0 +1,12 @@
+.title {
+  margin: 0;
+  color: $black;
+
+  &--h2 {
+    @include font(24px, 29px, 700);
+  }
+
+  &--h3 {
+    @include font(14px, 17px, 700);
+  }
+}

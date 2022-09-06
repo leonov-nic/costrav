@@ -1,0 +1,50 @@
+mixin footer(footerMods, currentPage)
+  -
+    var footerLinks = [
+      {
+        href: "main.html",
+        text: "Главная"
+      },
+      {
+        href: "#",
+        text: "Экскурсии"
+      },
+      {
+        href: "#",
+        text: "Личный кабинет"
+      },
+    ]
+
+    var telLinks = [
+      {
+        href: "+79649441874",
+        text: "+7 964 944 18 74"
+      },
+      {
+        href: "+79189199828",
+        text: "+7 918 919 98 28"
+      },
+      {
+        text: "Телеграм-бот PeroTravel"
+      },
+    ]
+
+  footer.footer(class=footerMods)
+    .container
+      .footer__wrapper
+        .footer__img-box
+          img(src="img/content/footer-logo.svg" width="80" height="114" alt="foto")
+        ul.footer__list
+          each link, index in footerLinks
+            li.footer__item
+              a.footer__link(href=link.href)=link.text
+        ul.footer__list.footer__list--ml
+          each link, index in telLinks
+            li.footer__item
+              if(href)
+                a.footer__link.footer__link--icon(href=`tel:${link.href}`)=link.text
+              else
+                a.footer__link.footer__link--icon=link.text
+        .footer__social-box
+          a.footer__link.footer__link--icon(href="mailto: office@perotravel.ru") office@perotravel.ru
+          +socials().socials--flex

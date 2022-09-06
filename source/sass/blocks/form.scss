@@ -1,0 +1,45 @@
+.form {
+  width: 100%;
+
+  &--add-parameters {
+    width: 360px;
+    padding-top: 20px;
+  }
+}
+
+.form__field {
+  margin-bottom: 20px;
+
+  &--last {
+    margin-bottom: 85px;
+  }
+}
+
+.form__field input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid $black;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  transition: border-color 0.3s;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::placeholder {
+    color: $black;
+    @include font(12px, 15px, 500);
+  }
+
+  &:hover {
+    border-color: $blue;
+  }
+
+  &:focus {
+    color: $lightseagreen;
+    border-color: transparent;
+    outline: none;
+  }
+}

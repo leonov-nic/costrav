@@ -1,0 +1,273 @@
+extends ../base/layout
+
+block variables
+  - const title = "new"
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentPage = "index.html"
+
+block main
+  main
+    h1.visually-hidden Путешествия с Costravel
+    section.news
+      .container
+        .news__wrapper
+          h2.title.title--h2 Новости
+          a.link.link--underline(href="#" aria-label="читать все новости") Все новости
+        .swiper
+          ul.swiper-wrapper.news__list
+            li.swiper-slide.news__item
+              img.news__img(src="img/content/news-1@1x.jpg" width="360" height="215" alt="сочи")
+              .news__text-box
+                h3.title.title--h3 Название новости
+                p.news__date 6 августа 2022
+                p.news__text
+                  | Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                  | Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров)
+                  | на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная
+                  | в 1935-36 годах ...
+                +button('Подробнее').button--withoutarrow.button--news
+            li.swiper-slide.news__item
+              img.news__img(src="img/content/news-1@1x.jpg" width="360" height="215" alt="сочи")
+              .news__text-box
+                h3.news__title Название новости
+                p.news__date 6 августа 2022
+                p.news__text
+                  | Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                  | Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров)
+                  | на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная
+                  | в 1935-36 годах ...
+                +button('Подробнее').button--withoutarrow.button--news
+            li.swiper-slide.news__item
+              img.news__img(src="img/content/news-1@1x.jpg" width="360" height="215" alt="сочи")
+              .news__text-box
+                h3.news__title Название новости
+                p.news__date 6 августа 2022
+                p.news__text
+                  | Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                  | Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров)
+                  | на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная
+                  | в 1935-36 годах ...
+                +button('Подробнее').button--withoutarrow.button--news
+            li.swiper-slide.news__item
+              img.news__img(src="img/content/news-1@1x.jpg" width="360" height="215" alt="сочи")
+              .news__text-box
+                h3.news__title Название новости
+                p.news__date 6 августа 2022
+                p.news__text
+                  | Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                  | Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров)
+                  | на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная
+                  | в 1935-36 годах ...
+                +button('Подробнее').button--withoutarrow.button--news
+            li.swiper-slide.news__item
+              img.news__img(src="img/content/news-1@1x.jpg" width="360" height="215" alt="сочи")
+              .news__text-box
+                h3.news__title Название новости
+                p.news__date 6 августа 2022
+                p.news__text
+                  | Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                  | Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров)
+                  | на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная
+                  | в 1935-36 годах ...
+                +button('Подробнее').button--withoutarrow.button--news
+            li.swiper-slide.news__item
+              img.news__img(src="img/content/news-1@1x.jpg" width="360" height="215" alt="сочи")
+              .news__text-box
+                h3.news__title Название новости
+                p.news__date 6 августа 2022
+                p.news__text
+                  | Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                  | Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров)
+                  | на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная
+                  | в 1935-36 годах ...
+                +button('Подробнее').button--withoutarrow.button--news
+            li.swiper-slide.news__item
+              img.news__img(src="img/content/news-1@1x.jpg" width="360" height="215" alt="сочи")
+              .news__text-box
+                h3.news__title Название новости
+                p.news__date 6 августа 2022
+                p.news__text
+                  | Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                  | Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров)
+                  | на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная
+                  | в 1935-36 годах ...
+                +button('Подробнее').button--withoutarrow.button--news
+            li.swiper-slide.news__item
+              img.news__img(src="img/content/news-1@1x.jpg" width="360" height="215" alt="сочи")
+              .news__text-box
+                h3.news__title Название новости
+                p.news__date 6 августа 2022
+                p.news__text
+                  | Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                  | Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров)
+                  | на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная
+                  | в 1935-36 годах ...
+                +button('Подробнее').button--withoutarrow.button--news
+            li.swiper-slide.news__item
+              img.news__img(src="img/content/news-1@1x.jpg" width="360" height="215" alt="сочи")
+              .news__text-box
+                h3.news__title Название новости
+                p.news__date 6 августа 2022
+                p.news__text
+                  | Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                  | Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров)
+                  | на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная
+                  | в 1935-36 годах ...
+                +button('Подробнее').button--withoutarrow.button--news
+          .swiper__wrapper-navigation
+            +icon("icon-swiper-prev", 25, 45).swiper-button-prev
+            +icon("icon-swiper-next", 25, 45).swiper-button-next
+            p.swiper-pagination
+      span.swiper-line
+    section.aboutus
+      .container
+        .aboutus__wrapper
+          .aboutus__img-box
+            img(src="img/content/team@1x.jpg" width="550" height="367" alt="команда Costravel")
+          .aboutus__box
+            h2.title.title--h2 О нас
+            .aboutus__text-box
+              p.text
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                | ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                | reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                | pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                | in culpa qui officia deserunt mollit anim id est laborum.
+
+              p.text
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                | ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+
+    section.offers
+      .container
+        .offers__wrapper
+          h2.title.title--h2 Акции и спецпредложения
+          .offers__text-box
+            p.text
+              | Выбирайте на нашем сайте путешествие, которая подходит именно вам
+              | и записывайтесь онлайн без очередей, просто и быстро!
+          ul.offers__list
+            li.offers__item
+              .offers__item-box
+                p Автобусный тур
+            li.offers__item
+              .offers__item-box
+                p Джиппинг
+            li.offers__item
+              .offers__item-box
+                p Яхтинг
+            li.offers__item
+              .offers__item-box
+                p Каньонинг
+      section.gallery
+        h2.visually-hidden Галерея фотографий Costravel
+        ul.gallery__list
+          li.gallery__item.gallery__item--first
+            img(src="img/content/team@1x.jpg" width="550" height="367" alt="команда Costravel")
+          li.gallery__item.gallery__item--lower.gallery__item--second
+            img(src="img/content/team@1x.jpg" width="550" height="367" alt="команда Costravel")
+          li.gallery__item.gallery__item--lower-s.gallery__item--third
+            img(src="img/content/team@1x.jpg" width="550" height="367" alt="команда Costravel")
+          li.gallery__item.gallery__item--lower-s.gallery__item--fourth
+            img(src="img/content/team@1x.jpg" width="550" height="367" alt="команда Costravel")
+          li.gallery__item.gallery__item--center.gallery__item--fifth
+            img(src="img/content/team@1x.jpg" width="550" height="367" alt="команда Costravel")
+          li.gallery__item.gallery__item--sixth
+            img(src="img/content/team@1x.jpg" width="550" height="367" alt="команда Costravel")
+          li.gallery__item.gallery__item--seventh
+            img(src="img/content/team@1x.jpg" width="550" height="367" alt="команда Costravel")
+          li.gallery__item.gallery__item--lower.gallery__item--eighth
+            img(src="img/content/team@1x.jpg" width="550" height="367" alt="команда Costravel")
+      section.feedbacks
+        .container
+          .feedbacks__wrapper
+            h2.title.title--h2 Отзывы
+            a.link.link--underline(href="#" aria-label="читать все новости") Все отзывы
+          .swiper.swiper--feedbacks
+            ul.swiper-wrapper.feedbacks__list
+              li.swiper-slide.feedbacks__item
+                .feedbacks__img-box
+                  img(src="img/content/fb-1@1x.jpg" width="245" height="245" alt="Отзыв")
+                .feedbacks__text-box
+                  h3.title.title--h3 Яна Синицина, 45 лет
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    | incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    | exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    | irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              li.swiper-slide.feedbacks__item
+                .feedbacks__img-box
+                  img(src="img/content/fb-2@1x.jpg" width="245" height="245" alt="Отзыв")
+                .feedbacks__text-box
+                  h3.title.title--h3 Иван Иванов, 25 лет
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    | incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    | exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    | irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              li.swiper-slide.feedbacks__item
+                .feedbacks__img-box
+                  img(src="img/content/fb-1@1x.jpg" width="245" height="245" alt="Отзыв")
+                .feedbacks__text-box
+                  h3.title.title--h3 Яна Синицина, 45 лет
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    | incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    | exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    | irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              li.swiper-slide.feedbacks__item
+                .feedbacks__img-box
+                  img(src="img/content/fb-2@1x.jpg" width="245" height="245" alt="Отзыв")
+                .feedbacks__text-box
+                  h3.title.title--h3 Иван Иванов, 25 лет
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    | incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    | exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    | irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              li.swiper-slide.feedbacks__item
+                .feedbacks__img-box
+                  img(src="img/content/fb-1@1x.jpg" width="245" height="245" alt="Отзыв")
+                .feedbacks__text-box
+                  h3.title.title--h3 Яна Синицина, 45 лет
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    | incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    | exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    | irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              li.swiper-slide.feedbacks__item
+                .feedbacks__img-box
+                  img(src="img/content/fb-2@1x.jpg" width="245" height="245" alt="Отзыв")
+                .feedbacks__text-box
+                  h3.title.title--h3 Иван Иванов, 25 лет
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    | incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    | exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    | irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .swiper__wrapper-navigation
+              +icon("icon-swiper-prev", 25, 45).swiper-button-prev
+              +icon("icon-swiper-next", 25, 45).swiper-button-next
+              p.swiper-pagination
+        span.swiper-line
+      section.questions
+        .container
+          .questions__wrapper
+            .questions__wrapper-text
+              h2.title.title--h2 Остались вопросы?
+              p Оставь заявку и мы ответим
+            +form().form--add-parameters

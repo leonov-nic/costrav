@@ -1,0 +1,36 @@
+.header-nav {
+  max-width: 50%;
+}
+
+.header-nav__list {
+  list-style: none;
+  padding: 35px 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.header-nav__item {
+  margin-left: 22px;
+
+  &:hover {
+    border-color: $cyan;
+  }
+}
+
+.header-nav__link {
+  margin: 0;
+  border-bottom: 1px solid transparent;
+  color: $black;
+  transition: border-color 0.3s;
+  letter-spacing: -0.03em;
+
+  &--active {
+    color: $cyan;
+  }
+
+  &:not(.header-nav__link--active):hover {
+    border-color: $cyan;
+  }
+}

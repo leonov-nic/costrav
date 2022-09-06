@@ -1,0 +1,19 @@
+mixin modal-2fa()
+  h2.title.title--h2 Двухфакторная аутентификация
+  p.modal__text
+    | На&nbsp;Ваш номер телефона отправлен проверочный код. Введите его в&nbsp;поле
+    | ниже для подтверждения номера телефона.
+  .modal__qr-code
+    +picture("content", "qr-code-2", "png", "261", "165", altText="QR-код")
+
+  .modal__container
+    .qr-text
+      button(type="button" aria-label="Копировать QR-код" data-copy-from-id="qr-code-text").qr-text__copy-btn
+        .qr-text__copy-image
+          img(src="img/content/copy-icon-grey.png", width=17, height=17, alt="Копировать")
+        .qr-text__copy-image.qr-text__copy-image--onclick
+          img(src="img/content/copy-icon.png", width=17, height=17, alt="Копировать")
+      input.qr-text__input(type="text" id="qr-code-text" value="0x316984aAcFd142c6b62196CcE6cBf88876d3500f" readOnly)
+    form(method="POST")
+      input.input.modal__input(type="text" placeholder="Введите код*" aria-label="Код подтверждения" required)
+      button.button.button--big.button--blue(type="submit" disabled).modal__submit Отправить

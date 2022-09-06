@@ -1,0 +1,43 @@
+mixin header(headerMods, currentPage)
+  -
+    var headerLinks = [
+      {
+        href: "index.html",
+        text: "Главная"
+      },
+      {
+        href: "#",
+        text: "Путешествия"
+      },
+      {
+        href: "#",
+        text: "Личный кабинет"
+      },
+    ]
+
+  header.header(class=attributes.class, id='header')
+    .container-wide
+      .header__wrapper
+        .header__logo
+          +logo()
+        nav.header-nav
+          ul.header-nav__list
+            each link, index in headerLinks
+              li.header-nav__item
+                if(currentPage === link.href)
+                  a.header-nav__link.header-nav__link--active=link.text
+                else
+                  a.header-nav__link.link(href=link.href)=link.text
+    .container
+      .header__wrapper-second
+        +icon("costravel", 790, 210)
+        //-  img(src="img/content/costravel.svg" width="790" height="200" alt="Логотип")
+        +socials()
+
+      +button('К экскурсиям')
+    .header__img-box
+      ul.header__img-box-list
+        li.header__img-box-item
+        li.header__img-box-item
+        li.header__img-box-item
+

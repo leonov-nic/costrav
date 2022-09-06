@@ -1,0 +1,14 @@
+mixin form()
+  .form(class=attributes.class)
+    form(action="#" method="POST")
+      .form__field
+        label.visually-hidden(for="name") Ваше имя
+        input(type="text" name="name" id="name" placeholder="Имя" required)
+      .form__field
+        label.visually-hidden(for="phone") Ваше имя
+        input(type="tel" name="phone" id="phone" placeholder="Телефон" required)
+      .form__field.form__field--last
+        label.visually-hidden(for="mail") Ваше имя
+        input(type="email" name="mail" id="mail" placeholder="Почта" required)
+      .form__field
+        button.button(type="submit") Оставить заявку

@@ -1,0 +1,16 @@
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin mapa() {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font($font-size: 12px, $line-height: 125%, $font-weight: 400) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}

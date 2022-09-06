@@ -1,0 +1,56 @@
+.swiper-wrapper {
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  cursor: pointer;
+  stroke: $lightgrey;
+  transition: stroke 0.3s;
+
+  &:hover {
+    stroke: $cyan;
+  }
+}
+
+.swiper__wrapper-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+}
+
+.swiper-pagination-bullet {
+  position: absolute;
+  height: 2px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $cyan;
+  position: absolute;
+  z-index: 1000;
+  width: 150px;
+  margin-right: 250px;
+}
+
+.swiper-line {
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: -22.5px;
+    left: 300px;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $lightgrey;
+  }
+}
+
+.swiper--feedbacks  {
+  width: 740px;
+}
